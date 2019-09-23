@@ -76,11 +76,11 @@ thematrix
 #the difference between an array and a matrix is a matrix has two dimensions; rows and columns, and array has more, rows, columns and dimension
 jh<-thematrix[4,1]
 jh
-#this extracts the fourth value in my first column of my matrix
+#this extracts the fourth value in my first column of my matrix, which is 4
 a.ray
 gt<-a.ray[2,2,2]
 gt
-#this object extracts the second value in the second column of the second level
+#this object extracts the second value in the second column of the second level, which is 18
 #script2
 testdata<-load(file='test1_data.Rdata')
 testdata
@@ -91,7 +91,7 @@ NCOL(d)
 #this is the operator that I used to get the number of columns in this data, which are 18 cols
 hu<-d$transect.id
 hu
-#this is the operator that I used to just get the transect.id data
+#this is the operator that I used to just get the transect.id data, 
 str(d)
 #this is the operator that I used to get the five data types; character, factor, numeric, POSIXct, and integer
 d$tow
@@ -106,3 +106,6 @@ class(tuvu)
 d$sw.density<-NULL
 str(d)
 #by assigned the sw.density to NULL, and then printing the str, the sw.density is no longer there,or it is removed
+#re-do data type 
+class(d$transect.id)
+#this is the data type of transect which is "character"
