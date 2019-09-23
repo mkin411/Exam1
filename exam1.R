@@ -55,3 +55,16 @@ sum(cf)
 if.else.then<-function(x){if(x =="a")"pycnigonad" else if (x =="b")"sea fan" else if (x =="c") "rhodolith" else "octocoral"}
 if.else.then("c")
 #this is a conditional statement that pulls out the value assigned to c, which is rhodolith
+g<-"eso"
+class(g)
+#this is an example of a character data type
+fr<-c(1L,2L,3L)
+class(fr)
+#this is an example of an integer data type with 3 values
+fd<-25
+class(fd)
+#this is an example of a numeric data type
+ds<-factor(c(2,3,4))
+class(ds)
+#this is an example of a factor data type with 3 levels
+
