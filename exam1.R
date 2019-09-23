@@ -82,3 +82,27 @@ gt<-a.ray[2,2,2]
 gt
 #this object extracts the second value in the second column of the second level
 #script2
+testdata<-load(file='test1_data.Rdata')
+testdata
+#this is what I loaded 
+NROW(d)
+#this is the operator that I used to get the number of rows in this data, which is 503441
+NCOL(d)
+#this is the operator that I used to get the number of columns in this data, which are 18 cols
+hu<-d$transect.id
+hu
+#this is the operator that I used to just get the transect.id data
+str(d)
+#this is the operator that I used to get the five data types; character, factor, numeric, POSIXct, and integer
+d$tow
+class(d$tow)
+de<-as.character(d$tow)
+class(de)
+#this tow data says it was a factor, so I changed it to a character by de
+class(d$haul)
+tuvu<-as.numeric(d$haul)
+class(tuvu)
+#the haul data says it was already a integer, I changed it to a numeric datatype by tuvu
+d$sw.density<-NULL
+str(d)
+#by assigned the sw.density to NULL, and then printing the str, the sw.density is no longer there,or it is removed
