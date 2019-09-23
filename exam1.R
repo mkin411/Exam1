@@ -52,3 +52,6 @@ ew
 cf<-c(1,2,3,4,NA)
 sum(cf)
 #this is an example of a NA result because calculating the sum of a list with a NA value, can not retain that sum, it needs a value.
+if.else.then<-function(x){if(x =="a")"pycnigonad" else if (x =="b")"sea fan" else if (x =="c") "rhodolith" else "octocoral"}
+if.else.then("c")
+#this is a conditional statement that pulls out the value assigned to c, which is rhodolith
