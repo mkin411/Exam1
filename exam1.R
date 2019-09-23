@@ -67,4 +67,18 @@ class(fd)
 ds<-factor(c(2,3,4))
 class(ds)
 #this is an example of a factor data type with 3 levels
-
+a.ray<-array(1:24, dim=(c(4,3,2)))
+a.ray
+#this is an example of an array with 4 rows, 3 columns and 2 dimensions
+thematrix<-matrix(1:10, nrow=5, ncol=2)
+thematrix
+#this is the matrix with 5 rows and 2 columns
+#the difference between an array and a matrix is a matrix has two dimensions; rows and columns, and array has more, rows, columns and dimension
+jh<-thematrix[4,1]
+jh
+#this extracts the fourth value in my first column of my matrix
+a.ray
+gt<-a.ray[2,2,2]
+gt
+#this object extracts the second value in the second column of the second level
+#script2
